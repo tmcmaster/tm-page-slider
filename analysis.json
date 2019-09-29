@@ -2,9 +2,9 @@
   "schema_version": "1.0.0",
   "elements": [
     {
-      "description": "Polymer element for displaying slides in a carousel.\n  ### Examples\n  Each slide must be within a paper-slide tag, but other than that you have complete control.\n\n      <tm-paper-slider total-slides=\"4\">\n        <paper-slide>#1</paper-slide>\n        <paper-slide>#2</paper-slide>\n        <paper-slide>#3</paper-slide>\n        <paper-slide>#4</paper-slide>\n      </tm-paper-slider>\n\n  There is also auto progression and slide duration for how long it should remain on one slide\n\n      <tm-paper-slider auto-progress slide-duration=\"2\" total-slides=\"3\">\n        <paper-slide>#1</paper-slide>\n        <paper-slide>#2</paper-slide>\n        <paper-slide>#3</paper-slide>\n      </tm-paper-slider>\n\n  You can set a different default start position, the first start postion is 0 (as opposed to 1)\n\n      <tm-paper-slider position=\"1\" total-slides=\"2\">\n        <paper-slide>#1</paper-slide>\n        <paper-slide>#2</paper-slide>\n      </tm-paper-slider>\n\n  ### Styling\n  The following custom properties are available for styling:\n\nCustom property | Description | Default\n----------------|-------------|----------\n`--paper-slide-dot` | Color of unselected Nav Dot. | `rgba(255, 255, 255, .5)\n`--paper-slide-dot-selected` | Color of selected Nav Dot. | `#FFF`\n`--paper-slide-width` | Width of slide container. | `100%`\n`--paper-slide-height` | Height of slide container. | `600px`\n`--paper-slider-styles` | (Mixin) Customs styles for slider container | NULL\n`--paper-slider-dot-container-styles` | (Mixin) Custom styles for dot container | NULL\n`--paper-slide-dot-styles` | (Mixin) Custon styles for dots | NULL\n`--paper-slide-background` | Default background color for slides | `rgba(0,0,0,0)`",
+      "description": "Polymer element for displaying slides in a carousel.\n  ### Examples\n  Each slide must be within a paper-slide tag, but other than that you have complete control.\n\n      <tm-page-slider total-slides=\"4\">\n        <paper-slide>#1</paper-slide>\n        <paper-slide>#2</paper-slide>\n        <paper-slide>#3</paper-slide>\n        <paper-slide>#4</paper-slide>\n      </tm-page-slider>\n\n  There is also auto progression and slide duration for how long it should remain on one slide\n\n      <tm-page-slider auto-progress slide-duration=\"2\" total-slides=\"3\">\n        <paper-slide>#1</paper-slide>\n        <paper-slide>#2</paper-slide>\n        <paper-slide>#3</paper-slide>\n      </tm-page-slider>\n\n  You can set a different default start position, the first start postion is 0 (as opposed to 1)\n\n      <tm-page-slider position=\"1\" total-slides=\"2\">\n        <paper-slide>#1</paper-slide>\n        <paper-slide>#2</paper-slide>\n      </tm-page-slider>\n\n  ### Styling\n  The following custom properties are available for styling:\n\nCustom property | Description | Default\n----------------|-------------|----------\n`--paper-slide-dot` | Color of unselected Nav Dot. | `rgba(255, 255, 255, .5)\n`--paper-slide-dot-selected` | Color of selected Nav Dot. | `#FFF`\n`--paper-slide-width` | Width of slide container. | `100%`\n`--paper-slide-height` | Height of slide container. | `600px`\n`--paper-slider-styles` | (Mixin) Customs styles for slider container | NULL\n`--paper-slider-dot-container-styles` | (Mixin) Custom styles for dot container | NULL\n`--paper-slide-dot-styles` | (Mixin) Custon styles for dots | NULL\n`--paper-slide-background` | Default background color for slides | `rgba(0,0,0,0)`",
       "summary": "",
-      "path": "tm-paper-slider.html",
+      "path": "tm-page-slider.html",
       "properties": [
         {
           "name": "keyEventTarget",
@@ -1173,7 +1173,7 @@
           "description": "",
           "name": "",
           "range": {
-            "file": "tm-paper-slider.html",
+            "file": "tm-page-slider.html",
             "start": {
               "line": 139,
               "column": 8
@@ -1185,7 +1185,7 @@
           }
         }
       ],
-      "tagname": "tm-paper-slider"
+      "tagname": "tm-page-slider"
     }
   ]
 }

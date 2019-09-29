@@ -10,27 +10,27 @@ import { addListener } from '@polymer/polymer/lib/utils/gestures.js';
 * ### Examples
 * Each slide must be within a paper-slide tag, but other than that you have complete control.
 *
-*   <tm-paper-slider>
+*   <tm-page-slider>
 *     <paper-slide>#1</paper-slide>
 *     <paper-slide>#2</paper-slide>
 *     <paper-slide>#3</paper-slide>
 *     <paper-slide>#4</paper-slide>
-*   </tm-paper-slider>
+*   </tm-page-slider>
 *
 * There is also auto progression and slide duration for how long it should remain on one slide
 *
-*   <tm-paper-slider auto-progress slide-duration="2" total-slides="3">
+*   <tm-page-slider auto-progress slide-duration="2" total-slides="3">
 *     <paper-slide>#1</paper-slide>
 *     <paper-slide>#2</paper-slide>
 *     <paper-slide>#3</paper-slide>
-*   </tm-paper-slider>
+*   </tm-page-slider>
 *
 * You can set a different default start position, the first start postion is 0 (as opposed to 1)
 *
-*   <tm-paper-slider position="1" total-slides="2">
+*   <tm-page-slider position="1" total-slides="2">
 *     <paper-slide>#1</paper-slide>
 *     <paper-slide>#2</paper-slide>
-*   </tm-paper-slider>
+*   </tm-page-slider>
 *
 * ### Styling
 * The following custom properties are available for styling:
@@ -48,7 +48,7 @@ import { addListener } from '@polymer/polymer/lib/utils/gestures.js';
 * `--paper-slide-font-size` | Default font size for slide | `medium`
 *
 * @polymer
-* @element tm-paper-slider
+* @element tm-page-slider
 * @demo demo/index.html
 */
 Polymer$0({
@@ -163,7 +163,7 @@ Polymer$0({
     </div>
 `,
 
-  is: 'tm-paper-slider',
+  is: 'tm-page-slider',
 
   listeners: {
     'container.track': '_swipeHandler'

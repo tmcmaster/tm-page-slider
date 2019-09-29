@@ -1,12 +1,12 @@
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Link2Twenty/tm-paper-slider)
-[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-blue.svg)](https://vaadin.com/directory/component/Link2Twentytm-paper-slider)
-[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Link2Twentytm-paper-slider.svg)](https://vaadin.com/directory/component/Link2Twentytm-paper-slider)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Link2Twenty/tm-page-slider)
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-blue.svg)](https://vaadin.com/directory/component/Link2Twentytm-page-slider)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Link2Twentytm-page-slider.svg)](https://vaadin.com/directory/component/Link2Twentytm-page-slider)
 
 
-# < tm-paper-slider >
+# < tm-page-slider >
 
 Polymer element for displaying slides in a carousel. 
-Have a quick look at the [Component page](https://www.webcomponents.org/element/Link2Twenty/tm-paper-slider/tm-paper-slider) 
+Have a quick look at the [Component page](https://www.webcomponents.org/element/Link2Twenty/tm-page-slider/tm-page-slider) 
 
 ![Screenshot](https://media.giphy.com/media/3o72Fh8f8VwsTrvSGA/giphy.gif)
 
@@ -15,7 +15,7 @@ Have a quick look at the [Component page](https://www.webcomponents.org/element/
 First you need bower, [see their site](http://bower.io/) for details 
 
 ```
-bower install --save tm-paper-slider
+bower install --save tm-page-slider
 ```
 
 ## Examples
@@ -26,7 +26,7 @@ Each slide must be within a paper-slide tag, but other than that you have comple
 <custom-element-demo>
   <template>
     <style is="custom-style">
-      tm-paper-slider {
+      tm-page-slider {
         --paper-slide-height: 200px;
 	--paper-slide-font-size: 64px;
       }
@@ -40,19 +40,19 @@ Each slide must be within a paper-slide tag, but other than that you have comple
       }
     </style>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="tm-paper-slider.html">
+    <link rel="import" href="tm-page-slider.html">
 	 <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
 -->
 ```html
-  <tm-paper-slider>
+  <tm-page-slider>
     <paper-slide>#1</paper-slide>
     <paper-slide>#2</paper-slide>
     <paper-slide>#3</paper-slide>
     <paper-slide>#4</paper-slide>
-  </tm-paper-slider>
+  </tm-page-slider>
 ```
   
 There is also auto progression and slide duration for how long it should remain on one slide
@@ -62,7 +62,7 @@ There is also auto progression and slide duration for how long it should remain 
 <custom-element-demo>
   <template>
     <style is="custom-style">
-      tm-paper-slider {
+      tm-page-slider {
         --paper-slide-height: 200px;
       }
       
@@ -76,18 +76,18 @@ There is also auto progression and slide duration for how long it should remain 
       }
     </style>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="tm-paper-slider.html">
+    <link rel="import" href="tm-page-slider.html">
 	 <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
 -->
 ```html
-  <tm-paper-slider auto-progress slide-duration="2">
+  <tm-page-slider auto-progress slide-duration="2">
     <paper-slide>#1</paper-slide>
     <paper-slide>#2</paper-slide>
     <paper-slide>#3</paper-slide>
-  </tm-paper-slider>
+  </tm-page-slider>
 ```
   
 You can set a different default start position, the first start postion is 0 (as opposed to 1)
@@ -97,7 +97,7 @@ You can set a different default start position, the first start postion is 0 (as
 <custom-element-demo>
   <template>
     <style is="custom-style">
-      tm-paper-slider {
+      tm-page-slider {
         --paper-slide-height: 200px;
       }
       
@@ -111,17 +111,17 @@ You can set a different default start position, the first start postion is 0 (as
       }
     </style>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="tm-paper-slider.html">
+    <link rel="import" href="tm-page-slider.html">
 	 <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
 -->
 ```html
-  <tm-paper-slider position="1">
+  <tm-page-slider position="1">
     <paper-slide>#1</paper-slide>
     <paper-slide>#2</paper-slide>
-  </tm-paper-slider>
+  </tm-page-slider>
 ```
   
 ## Styling

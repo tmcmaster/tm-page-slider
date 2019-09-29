@@ -1,11 +1,11 @@
 <html>
 
 <head>
-  <title>tm-paper-slider</title>
+  <title>tm-page-slider</title>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#003366">
   <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
-  <script type="module" src="/tm-paper-slider.js"></script>
+  <script type="module" src="/tm-page-slider.js"></script>
   <script type="module" src="/node_modules/@polymer/paper-button/paper-button.js"></script>
   <script type="module" src="/node_modules/@polymer/iron-demo-helpers/demo-snippet.js"></script>
   <custom-style>
@@ -25,7 +25,7 @@
           padding: 2px;
           box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.6);
         }
-        tm-paper-slider {
+        tm-page-slider {
           --paper-slide-font-size: 64px;
         }
       }
@@ -104,12 +104,12 @@
     <br>
     <br>
     <template>
-      <tm-paper-slider>
+      <tm-page-slider>
         <paper-slide class="paper-slide-blue demo-style">#1</paper-slide>
         <paper-slide class="paper-slide-red demo-style">#2</paper-slide>
         <paper-slide class="paper-slide-brown demo-style">#3</paper-slide>
         <paper-slide class="paper-slide-green demo-style">#4</paper-slide>
-      </tm-paper-slider>
+      </tm-page-slider>
     </template>
   </demo-snippet>
   <br>
@@ -120,14 +120,14 @@
     <br>
     <template>
       <div class="container">
-        <tm-paper-slider disable-swipe class="swipeDis">
+        <tm-page-slider disable-swipe class="swipeDis">
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=C5CAE9&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=FFF9C4&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=DCEDC8&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=FFCCBC&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=FFF9C4&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=DCEDC8&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
-        </tm-paper-slider>
+        </tm-page-slider>
       </div>
     </template>
   </demo-snippet>
@@ -154,11 +154,11 @@
     <br>
     <template>
       <div class="container">
-        <tm-paper-slider hide-nav class="exNav">
+        <tm-page-slider hide-nav class="exNav">
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=C5CAE9&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=BBDEFB&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=DCEDC8&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
-        </tm-paper-slider>
+        </tm-page-slider>
         <paper-button onclick="document.querySelector('.exNav').movePos(0)">1</paper-button>
         <paper-button onclick="document.querySelector('.exNav').movePos(1)">2</paper-button>
         <paper-button onclick="document.querySelector('.exNav').movePos(2)">3</paper-button>
@@ -186,11 +186,11 @@
     <br>
     <template>
       <div class="container half-height">
-        <tm-paper-slider class="styledDots">
+        <tm-page-slider class="styledDots">
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=C5CAE9&txtclr=212121&txt=300%C3%97150&w=300&h=150&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=BBDEFB&txtclr=212121&txt=300%C3%97150&w=300&h=150&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=DCEDC8&txtclr=212121&txt=300%C3%97150&w=300&h=150&fm=png');"></paper-slide>
-        </tm-paper-slider>
+        </tm-page-slider>
       </div>
     </template>
   </demo-snippet>
@@ -228,10 +228,10 @@
     <b>Notes:</b> Slides pause on mouse over
     <template>
       <div class="container">
-        <tm-paper-slider auto-progress slide-duration="2" class="custom">
+        <tm-page-slider auto-progress slide-duration="2" class="custom">
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=FFF9C4&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=FFCCBC&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
-        </tm-paper-slider>
+        </tm-page-slider>
       </div>
     </template>
   </demo-snippet>
@@ -258,12 +258,12 @@
     <br>
     <template>
       <div class="container">
-        <tm-paper-slider class="moveControl" position="2">
+        <tm-page-slider class="moveControl" position="2">
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=C5CAE9&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=FFF9C4&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=DCEDC8&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
           <paper-slide style="background-image: url('https://placeholdit.imgix.net/~text?txtsize=28&bg=FFCCBC&txtclr=212121&txt=300%C3%97300&w=300&h=300&fm=png');"></paper-slide>
-        </tm-paper-slider>
+        </tm-page-slider>
         <paper-button class="proceed" onclick="document.querySelector('.moveControl').movePrev();">Previous</paper-button>
         <paper-button class="proceed" onclick="document.querySelector('.moveControl').moveNext();">Next</paper-button>
       </div>
@@ -291,10 +291,10 @@
     <br>
     <br>
     <template>
-      <tm-paper-slider class="reinit-demo">
+      <tm-page-slider class="reinit-demo">
         <paper-slide class="paper-slide-green demo-style">#1</paper-slide>
         <paper-slide class="paper-slide-green demo-style">#2</paper-slide>
-      </tm-paper-slider>
+      </tm-page-slider>
       <div class="button-flex">
         <paper-button onclick="addSlide()">Add</paper-button>
         <paper-button onclick="remSlide()">Remove</paper-button>
