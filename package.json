@@ -1,9 +1,10 @@
 {
   "name": "@wonkytech/tm-page-slider",
+  "version": "0.0.5",
   "main": "tm-page-slider.js",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Link2Twenty/tm-page-slider/issues"
+    "url": "https://github.com/tmcmaster/tm-page-slider/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -37,6 +38,5 @@
   "scripts": {
     "doc": "polymer serve -o",
     "predoc": "polymer analyze > analysis.json"
-  },
-  "version": "3.0.0"
+  }
 }
